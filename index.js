@@ -32,7 +32,7 @@ var employee_tracker = function () {
                 console.table(result);
                 employee_tracker();
             });
-        } else if (answers.prompt === 'View All Employees') {
+        } else if (answers.prompt === 'View Employees') {
             db.query(`SELECT * FROM employee`, (err, result) => {
                 if (err) throw err;
                 console.log("Viewing All Employees: ");
